@@ -7,6 +7,13 @@
 	<title>Blog</title>
 </head>
 <body>
-	<p>Blog</p>
+	<?php
+		$posts = "SELECT * FROM posts";
+		while($posts as $post) {
+			echo "<li>";
+			echo $post;
+			echo "</li>";
+		}
+	?>
 </body>
 </html>
